@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple KYC dApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Web3.js from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.3/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple KYC dApp</h1>
+        <p>Connect your MetaMask wallet (on Sepolia Testnet) to interact with the KYC Registry.</p>
+
+        <button id="connectWalletBtn">Connect Wallet</button>
+        <p id="walletStatus">Status: Not Connected</p>
+        <p id="walletAddress"></p>
+
+        <hr>
+
+        <div class="card">
+            <h2>1. Register Your KYC Hash</h2>
+            <p>Generate a hash of your KYC documents and submit it. This can be any unique string for this demo.</p>
+            <input type="text" id="kycHashInput" placeholder="Enter your unique KYC hash">
+            <button id="registerBtn">Register KYC</button>
+        </div>
+
+        <div class="card" id="adminSection" style="display: none;">
+            <h2>2. Verify KYC (Admin Only)</h2>
+            <p>If you are the admin, you can verify a user's submitted KYC.</p>
+            <input type="text" id="verifyAddressInput" placeholder="Enter user address to verify">
+            <button id="verifyBtn">Verify KYC</button>
+        </div>
+
+        <div class="card">
+            <h2>3. Check KYC Status</h2>
+            <p>Enter an Ethereum address to check its KYC status.</p>
+            <input type="text" id="statusAddressInput" placeholder="Enter address to check">
+            <button id="checkStatusBtn">Check Status</button>
+        </div>
+
+        <div class="card log-card">
+            <h2>Activity Log</h2>
+            <div id="log"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+  
