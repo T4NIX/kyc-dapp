@@ -1,18 +1,11 @@
 
 // Wait for the DOM to be fully loaded before running the script
 document.addEventListener('DOMContentLoaded', () => {
-    // ==================================================================================
-    // !!! IMPORTANT !!!
-    //
-    // 1. PASTE YOUR CONTRACT ADDRESS BELOW
-    //    You can get this from Remix after deploying your contract.
-    //
+   
+    
     const contractAddress = 'PASTE_YOUR_CONTRACT_ADDRESS_HERE';
 
-    // 2. PASTE YOUR CONTRACT ABI BELOW
-    //    You can get this from the "Compiler" tab in Remix.
-    //    Find your contract, and click the "ABI" button to copy it.
-    //
+   
     const contractABI = [
         
 	{
@@ -151,10 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
     ];
-    // ==================================================================================
-
-
-    // --- DOM Element References ---
+   
     const connectWalletBtn = document.getElementById('connectWalletBtn');
     const walletStatus = document.getElementById('walletStatus');
     const walletAddress = document.getElementById('walletAddress');
@@ -387,4 +377,5 @@ document.addEventListener('DOMContentLoaded', () => {
     updateUI();
     log('dApp loaded. Please connect your wallet.');
 });
+
   
