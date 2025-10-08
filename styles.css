@@ -1,5 +1,5 @@
 
-/* General Body Styles */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -9,7 +9,7 @@ body {
     line-height: 1.6;
 }
 
-/* Main Container */
+
 .container {
     max-width: 700px;
     margin: 0 auto;
@@ -37,7 +37,7 @@ hr {
     margin: 30px 0;
 }
 
-/* Interactive Elements: Buttons and Inputs */
+
 button {
     background-color: #007bff;
     color: white;
@@ -69,10 +69,10 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    box-sizing: border-box; 
 }
 
-/* Card Layout for Sections */
+
 .card {
     background-color: #ffffff;
     padding: 20px;
@@ -82,9 +82,7 @@ input[type="text"] {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
 }
 
-/* Admin Section Specific Style */
-#adminSection {
-    background-color: #fffbe6; /* Light yellow to stand out */
+
     border-color: #ffe58f;
 }
 
@@ -92,7 +90,7 @@ input[type="text"] {
     color: #d46b08;
 }
 
-/* Wallet Status Display */
+
 #walletStatus {
     font-weight: bold;
     font-size: 0.9rem;
@@ -118,9 +116,9 @@ input[type="text"] {
     word-break: break-all;
 }
 
-/* Log Area */
+
 .log-card {
-    background-color: #282c34; /* Dark background */
+    background-color: #282c34; 
     color: #abb2bf;
 }
 
@@ -152,7 +150,7 @@ input[type="text"] {
 #log .info { color: #61afef; }
 #log .tx { color: #c678dd; }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     body {
         padding: 10px;
@@ -167,4 +165,5 @@ input[type="text"] {
         font-size: 1.2rem;
     }
 }
+
   
